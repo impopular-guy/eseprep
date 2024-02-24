@@ -7,4 +7,6 @@ has_toc: true
 ---
 
 
-Home Page
+Electronics and Communication Engineering
+
+> Assumed that person reading this already possess a decent knowledge about this topic. Only special things are noted down.

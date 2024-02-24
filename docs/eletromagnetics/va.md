@@ -7,8 +7,12 @@ mathjax: true
 ---
 
 # Vector Analysis
+{: .no_toc}
 
 > Assumed that person reading this already possess a decent knowledge about this topic. Only special things are noted down.
+
+1. TOC
+{:toc}
 
 ---
 
