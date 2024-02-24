@@ -149,3 +149,54 @@ Catesian: $$\nabla = \frac{\partial}{\partial x}\hat{a_x} + \frac{\partial}{\par
 Cylindrical: $$\nabla = \frac{\partial}{\partial \rho}\hat{a_\rho} + \frac{1}{\rho}\frac{\partial}{\partial \phi}\hat{a_\phi} + \frac{\partial}{\partial z}\hat{a_z}$$
 
 Spherical: $$\nabla = \frac{\partial}{\partial r}\hat{a_r} + \frac{1}{r}\frac{\partial}{\partial \theta}\hat{a_\theta} + \frac{1}{r\sin\theta}\frac{\partial}{\partial \phi}\hat{a_\phi}$$
+
+- gradient: $$\nabla V$$
+- divergence: $$\nabla \cdot \vec{A}$$
+- curl: $$\nabla \times \vec{A}$$
+- Laplacian: $$\nabla^2V$$
+- $$\nabla \cdot (\nabla \times \vec{A}) = 0$$
+- $$\nabla \times (\nabla f) = 0$$
+- $$\nabla \times (\nabla \times \vec{A}) = \nabla(\nabla \cdot \vec{A}) - \nabla^2 \vec{A}$$
+- $$\nabla(UV) = V\nabla U + U \nabla V$$
+
+### Devergence
+How much a field diverges from a point
+
+Catesian: $$\nabla \cdot \vec{A} = \frac{\partial A_x}{\partial x} + \frac{\partial A_y}{\partial y} + \frac{\partial A_z}{\partial z}$$
+
+Cylindrical: $$\nabla \cdot \vec{A}= \frac{1}{\rho}\frac{\partial (\rho A_\rho)}{\partial \rho} + \frac{1}{\rho}\frac{\partial A_\phi}{\partial \phi} + \frac{\partial A_z}{\partial z}$$
+
+Spherical: $$\nabla \cdot \vec{A}= \frac{1}{r^2}\frac{\partial(r^2 A_r)}{\partial r} + \frac{1}{r\sin \theta}\frac{\partial(A_\theta \sin\theta)}{\partial \theta} + \frac{1}{r\sin\theta}\frac{\partial A_\phi}{\partial \phi}$$
+
+**Divegence Theorem:** $$\oint_S \vec{A} \cdot d\vec{S} = \int_V \nabla \cdot \vec{A} dv$$
+
+### Curl
+whether there is a rotation associated with a vector field
+
+Cartesian: $$\nabla \times \vec{A} = \begin{vmatrix}
+\hat{a_x} & \hat{a_y} & \hat{a_z} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+A_x & A_y & A_z 
+\end{vmatrix}$$
+
+Cylindrical: $$\nabla \times \vec{A} = \frac{1}{\rho}\begin{vmatrix}
+\hat{a_\rho} & \rho \hat{a_\phi} & \hat{a_z} \\
+\frac{\partial}{\partial \rho} & \frac{\partial}{\partial \phi} & \frac{\partial}{\partial z} \\
+A_\rho & \rho A_\phi & A_z 
+\end{vmatrix}$$
+
+Spherical: $$\nabla \times \vec{A} = \frac{1}{r^2 \sin\theta}\begin{vmatrix}
+\hat{a_r} & r\hat{a_\theta} & r \sin\theta \hat{a_\phi} \\
+\frac{\partial}{\partial r} & \frac{\partial}{\partial \theta} & \frac{\partial}{\partial \phi} \\
+A_r & rA_\theta & r \sin\theta A_\phi 
+\end{vmatrix}$$
+
+**Stokes' Theorem**: $$\oint_L \vec{A} \cdot d\vec{l} = \int_S (\nabla \times \vec{A}) \cdot d\vec{S}$$
+
+### Laplacian of a Scalar
+
+Catesian: $$\nabla^2 V = \frac{\partial^2 V}{\partial x^2} + \frac{\partial^2 V}{\partial y^2} + \frac{\partial^2 V}{\partial z^2}$$
+
+Cylindrical: $$\nabla^2 V = \frac{1}{\rho}\frac{\partial }{\partial \rho}\left(\rho \frac{\partial V}{\partial \rho} \right) + \frac{1}{\rho^2}\frac{\partial^2 V}{\partial \phi^2} + \frac{\partial^2 V}{\partial z^2}$$
+
+Spherical: $$\nabla^2 V = \frac{1}{r^2}\frac{\partial}{\partial r}\left( r^2 \frac{\partial V}{\partial r}\right) + \frac{1}{r^2 \sin\theta}\frac{\partial}{\partial \theta}\left( \sin\theta \frac{\partial V}{\partial \theta} \right) + \frac{1}{r^2 \sin^2\theta}\frac{\partial^2 V}{\partial \phi^2}$$
