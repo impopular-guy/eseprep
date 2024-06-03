@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Eletromagnetics
+title: Electromagnetics
 has_children: true
 has_toc: true
 ---

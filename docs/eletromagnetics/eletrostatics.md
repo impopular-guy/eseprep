@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Electrostatics"
-parent: Eletromagnetics
+parent: Electromagnetics
 nav_order: 2
 mathjax: true
 ---
@@ -13,7 +13,7 @@ mathjax: true
 {:toc}
 
 ## Gauss's Law - Maxwell's Equation
-We have, total outward electric flux $$\psi$$, any closed surface $$S$$, total charge enclosed $$Q_{enc}$$, volume charge density $$\rho_v$$, eletrix flux density $$\vec{D}$$
+We have, total outward electric flux $$\psi$$, any closed surface $$S$$, total charge enclosed $$Q_{enc}$$, volume charge density $$\rho_v$$, electric flux density $$\vec{D}$$
 
 $$\psi = \oint_S \vec{D} \cdot d\vec{S} = Q_{end} = \int_V \rho_v dV$$
 
@@ -26,7 +26,7 @@ $$\vec{D} = \epsilon_r \epsilon_o \vec{E}$$, (units $$C/m^2$$)
 
 ### Application of Gauss's Law
 
-- Choose Gaussian surface such that $$\vec{D}$$ is normal or tangential to the surface and some symmentry exhibited by the charge distribution.
+- Choose Gaussian surface such that $$\vec{D}$$ is normal or tangential to the surface and some symmetry exhibited by the charge distribution.
 
 |Charge Source|$$\vec{D}$$|Gaussian surface|
 |:-|:-|:-|
@@ -89,13 +89,13 @@ Using Stoke's Theorem, we get $$\quad \nabla \times \vec{E} = 0$$
 
 ### Ohm's law
 - $$\vec{J} = \rho_v \vec{v_d} = \frac{ne^2\tau}{m_e}\vec{E} = \sigma\vec{E}$$ \
-    where $$\sigma = \frac{ne^2\tau}{m_e}$$ is conductivity, $$n$$ is number of electorns per unit volume, $$\tau$$ is avg. time interval between collisions.
+    where $$\sigma = \frac{ne^2\tau}{m_e}$$ is conductivity, $$n$$ is number of electrons per unit volume, $$\tau$$ is avg. time interval between collisions.
 
 
 - **A perfect conductor($$\sigma = \infty$$) cannot contain an electrostatic field inside it**
     * i.e. under static conditions $$E=0, \rho_v =0, V=0$$
     * Hence, also called *equipotential*
-    * As external eletric field is applied, both +ve and -ve charges accumulate on the surface to form *induced surface charge* and create *induced internal field* to negate the external field.
+    * As external electric field is applied, both +ve and -ve charges accumulate on the surface to form *induced surface charge* and create *induced internal field* to negate the external field.
     * Resistance $$R = \frac{V}{I} = \frac{\int_v \vec{E}\cdot d\vec{l}}{\int_s \sigma\vec{E}\cdot d\vec{S}}$$
     * Power = rate of change of energy = force times velocity
     $$P = \int_v \rho_vdv\vec{E}\cdot \vec{v}_d = \int_v \vec{E}\cdot \vec{J}$$ \
@@ -103,12 +103,12 @@ Using Stoke's Theorem, we get $$\quad \nabla \times \vec{E} = 0$$
 
 ## Continuity Equation
 
-- derived using priciple of conservation of charge
+- derived using principle of conservation of charge
 - states that there can be no accumulation of charge at a point
 - $$\fbox{$\nabla \cdot \vec{J} = - \frac{\partial\rho_v}{\partial t}$}$$ is called **continuity of current equation**
 - Derivation: $$I_{out} = -\frac{dQ_{in}}{dt} = \oint \vec{J}\cdot d\vec{S} = \int \nabla \cdot \vec{J} dv$$ \
 i.e. $$\int \nabla \cdot \vec{J} dv = -\frac{dQ_{in}}{dt} = -\int \frac{\partial\rho_v}{\partial t} dv$$
-- For steady current, $$\frac{\partial\rho_v}{\partial t} = 0$$, which proves Kirchoff's current law
+- For steady current, $$\frac{\partial\rho_v}{\partial t} = 0$$, which proves Kirchhoff's current law
 - *Relaxation time:* time taken for interior charge to drop to $$e_{-1}$$ (36.8%) of initial value. \
 $$T_r = \frac{\epsilon}{\sigma}$$
 
@@ -138,7 +138,7 @@ $$\fbox{$D_{1n} = D_{2n}$}$$ and $$\fbox{$ \epsilon_1 E_{1n} = \epsilon_2 E_{2n}
 
 - If the electric fields make angles $$\theta_1$$ and $$\theta_2$$ with the normal to the interface then $$\fbox{$\frac{\tan \theta_1}{\tan \theta_2} = \frac{\epsilon_{r1}}  {\epsilon_{r2}} $}$$
 
-### Conductor-Dieletric Boundary Condition
+### Conductor-Dielectric Boundary Condition
 
 - Inside a conductor $$\vec{E} = 0$$ 
 - Therefore, $$\fbox{$ E_t = 0, D_t = 0$}$$ and $$\fbox{$ D_n = \rho_s, E_n = \frac{\rho_s}{\epsilon} $}$$
@@ -178,4 +178,4 @@ $$\fbox{$D_{1n} = D_{2n}$}$$ and $$\fbox{$ \epsilon_1 E_{1n} = \epsilon_2 E_{2n}
 - for n dipole moments per unit volume, then $$\vec{p}_{total} = \sum^{n \Delta v}_{i=1}\vec{p}_i$$
 - Polarization $$P = \lim_{\Delta v \rightarrow 0} \frac{1}{\Delta v} \vec{p}_{total}$$
 - Also $$\fbox{$D = \epsilon_o E + P $}$$, $$ \fbox{$ P = \chi_e \epsilon_o E $}$$ and $$D = \epsilon_r \epsilon_o E$$
-- $$\fbox{$ \epsilon_r = \chi_e + 1 $}$$, where $$\chi_e$$ is eletric susceptibility of material.
+- $$\fbox{$ \epsilon_r = \chi_e + 1 $}$$, where $$\chi_e$$ is electric susceptibility of material.

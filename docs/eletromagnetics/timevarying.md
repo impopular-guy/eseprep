@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Time-Varying Electromagnetic Field"
-parent: Eletromagnetics
+parent: Electromagnetics
 nav_order: 4
 mathjax: true
 ---
@@ -30,7 +30,7 @@ $$\begin{array} {|c|c|c| }
 $$
 
 - a field can only be electric or magnetic of it can satisfy corresponding  maxwell's equation
-- above eqns are for static field. The divergence equations remain same but the curl equations change for time-varying fields.
+- above equations are for static field. The divergence equations remain same but the curl equations change for time-varying fields.
 
 ## Faraday's Law of Induction
 
@@ -45,7 +45,7 @@ $$
 
 - The variation in flux with time can be caused in three ways:
 
-### 1. Stationary Loop in time-varying B-Field(Treansform EMF)
+### 1. Stationary Loop in time-varying B-Field(Transformer EMF)
 
 - This is referred to transformer emf in power analysis since it is due to transformer action.
 - Using Stoke's theorem: \
@@ -56,11 +56,11 @@ $$
 
 ### 2. Moving loop in static B-Field (Motional EMF)
 
-- emf is induced in conduction loop when moved in a static B-field. It is called motional becaused it is due to motion. Found in motors, generators and alternators.
+- emf is induced in conduction loop when moved in a static B-field. It is called motional because it is due to motion. Found in motors, generators and alternators.
 - We define motional E-field as $$\vec{E}_m = \frac{\vec{F}_m}{Q} = \vec{v} \times \vec{B}$$ \
   i.e. $$\fbox{$ \nabla \times \vec{E} = \nabla \times (\vec{v} \times \vec{B}) $}$$
 
-### 3. Moving loop in time-varying fiels
+### 3. Moving loop in time-varying fields
 
 - this is the general case \
   i.e. $$\fbox{$ \nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t} + \nabla \times (\vec{v} \times \vec{B}) $}$$

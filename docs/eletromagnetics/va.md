@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Vector Analysis"
-parent: Eletromagnetics
+parent: Electromagnetics
 nav_order: 1
 mathjax: true
 ---
@@ -148,7 +148,7 @@ $$
 
 ### Del operator $$\nabla$$
 
-Catesian: $$\nabla = \frac{\partial}{\partial x}\hat{a_x} + \frac{\partial}{\partial y}\hat{a_y} + \frac{\partial}{\partial z}\hat{a_z}$$
+Cartesian: $$\nabla = \frac{\partial}{\partial x}\hat{a_x} + \frac{\partial}{\partial y}\hat{a_y} + \frac{\partial}{\partial z}\hat{a_z}$$
 
 Cylindrical: $$\nabla = \frac{\partial}{\partial \rho}\hat{a_\rho} + \frac{1}{\rho}\frac{\partial}{\partial \phi}\hat{a_\phi} + \frac{\partial}{\partial z}\hat{a_z}$$
 
@@ -163,16 +163,16 @@ Spherical: $$\nabla = \frac{\partial}{\partial r}\hat{a_r} + \frac{1}{r}\frac{\p
 - $$\nabla \times (\nabla \times \vec{A}) = \nabla(\nabla \cdot \vec{A}) - \nabla^2 \vec{A}$$
 - $$\nabla(UV) = V\nabla U + U \nabla V$$
 
-### Devergence
+### Divergence
 How much a field diverges from a point
 
-Catesian: $$\nabla \cdot \vec{A} = \frac{\partial A_x}{\partial x} + \frac{\partial A_y}{\partial y} + \frac{\partial A_z}{\partial z}$$
+Cartesian: $$\nabla \cdot \vec{A} = \frac{\partial A_x}{\partial x} + \frac{\partial A_y}{\partial y} + \frac{\partial A_z}{\partial z}$$
 
 Cylindrical: $$\nabla \cdot \vec{A}= \frac{1}{\rho}\frac{\partial (\rho A_\rho)}{\partial \rho} + \frac{1}{\rho}\frac{\partial A_\phi}{\partial \phi} + \frac{\partial A_z}{\partial z}$$
 
 Spherical: $$\nabla \cdot \vec{A}= \frac{1}{r^2}\frac{\partial(r^2 A_r)}{\partial r} + \frac{1}{r\sin \theta}\frac{\partial(A_\theta \sin\theta)}{\partial \theta} + \frac{1}{r\sin\theta}\frac{\partial A_\phi}{\partial \phi}$$
 
-**Divegence Theorem:** $$\oint_S \vec{A} \cdot d\vec{S} = \int_V \nabla \cdot \vec{A} dv$$
+**Divergence Theorem:** $$\oint_S \vec{A} \cdot d\vec{S} = \int_V \nabla \cdot \vec{A} dv$$
 
 ### Curl
 whether there is a rotation associated with a vector field
@@ -199,7 +199,7 @@ A_r & rA_\theta & r \sin\theta A_\phi
 
 ### Laplacian of a Scalar
 
-Catesian: $$\nabla^2 V = \frac{\partial^2 V}{\partial x^2} + \frac{\partial^2 V}{\partial y^2} + \frac{\partial^2 V}{\partial z^2}$$
+Cartesian: $$\nabla^2 V = \frac{\partial^2 V}{\partial x^2} + \frac{\partial^2 V}{\partial y^2} + \frac{\partial^2 V}{\partial z^2}$$
 
 Cylindrical: $$\nabla^2 V = \frac{1}{\rho}\frac{\partial }{\partial \rho}\left(\rho \frac{\partial V}{\partial \rho} \right) + \frac{1}{\rho^2}\frac{\partial^2 V}{\partial \phi^2} + \frac{\partial^2 V}{\partial z^2}$$
 

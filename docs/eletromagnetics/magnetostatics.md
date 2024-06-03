@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Magnetostatics"
-parent: Eletromagnetics
+parent: Electromagnetics
 nav_order: 3
 mathjax: true
 ---
@@ -52,7 +52,7 @@ $$
     1. $$R$$ distance between point P and current element
 
     i.e. $$\fbox{$ d\vec{H} = \frac{Id\vec{l} \times \hat{a}_R}{4\pi R^2} = \frac{Id\vec{l} \times \vec{R}}{4\pi R^3} $}$$
-- dirention of magnetic field determined using **right-hand screw rule** where thumb represents direction of current, rest of the fingers show direction of field.
+- direction of magnetic field determined using **right-hand screw rule** where thumb represents direction of current, rest of the fingers show direction of field.
 - other source elements for surface current density and volume current density are:
 $$Id\vec{l} \equiv \vec{K}dS \equiv \vec{J}dv$$
 
@@ -78,7 +78,7 @@ i.e $$\fbox{$ \nabla \times \vec{H} = \vec{J} $}$$
 - magnetic flux density $$\vec{B}$$ similar to $$\vec{D}$$
 - $$\fbox{$ \vec{B} = \mu_o \vec{H} $}$$ (Webers/square meter) or **Teslas**
 - magnetic flux $$\psi = \int_s \vec{B} \cdot d\vec{S}$$ (Webers)
-- isolated magnetic poles donot exist hence $$\fbox{$ \oint_s \vec{B}\cdot d\vec{S} = 0 $}$$ i.e. $$\fbox{$ \nabla \cdot \vec{B} = 0 $}$$
+- isolated magnetic poles don't exist hence $$\fbox{$ \oint_s \vec{B}\cdot d\vec{S} = 0 $}$$ i.e. $$\fbox{$ \nabla \cdot \vec{B} = 0 $}$$
 
 > 1. magnetostatic field is not conserved, but magnetic flux is conserved
 > 2. magnetic field lines are always continuous
